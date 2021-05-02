@@ -3,9 +3,9 @@ const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
 const port = 8080
-const flights = require('./Schemas/flight')
-const fares = require('./Schemas/fare')
-const reservation = require('./Schemas/seatReservation')
+const flights = require('./schemas/flight')
+const fares = require('./schemas/fare')
+const reservation = require('./schemas/seatReservation')
 
 //connect to mongoose
 mongoose.connect('mongodb://localhost/nodemongo', {
