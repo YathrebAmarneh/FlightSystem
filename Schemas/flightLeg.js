@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const flightLegSchema = new mongoose.Schema(
+const flightLeg = new mongoose.Schema(
     {
         Flight_number: { type: String },
         Leg_number: { type: Number },
@@ -13,4 +13,4 @@ const flightLegSchema = new mongoose.Schema(
     }, { collection: 'flight_leg' }
 )
 
-module.exports = mongoose.model('flight_leg', flightLegSchema)
+module.exports = mongoose.model('flight_leg', flightLeg)

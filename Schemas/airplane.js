@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const AirplaneSchema = new mongoose.Schema(
+const airplane = new mongoose.Schema(
     {
         Airplane_id: { type: Number },
         Total_number_of_seats: { type: Number },
@@ -10,4 +10,4 @@ const AirplaneSchema = new mongoose.Schema(
     }, { collection: 'airplane' }
 )
 
-module.exports = mongoose.model('airplane', AirplaneSchema);
+module.exports = mongoose.model('airplane', airplane);

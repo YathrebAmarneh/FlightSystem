@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const seatreseRvationSchema = new mongoose.Schema(
+const seatreseRvation = new mongoose.Schema(
     {
         Flight_number: { type: String },
         Leg_number: { type: Number },
@@ -13,4 +13,4 @@ const seatreseRvationSchema = new mongoose.Schema(
     }, { collection: 'seat_reservation' }
 )
 
-module.exports = mongoose.model('seat_reservation', seatreseRvationSchema)
+module.exports = mongoose.model('seat_reservation', seatreseRvation)

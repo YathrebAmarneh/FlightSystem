@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const canLandSchema = new mongoose.Schema(
+const canLand = new mongoose.Schema(
     {
         Airplane_type_name: { type: String },
         Airport_code: { type: String },
@@ -8,4 +8,4 @@ const canLandSchema = new mongoose.Schema(
 
     }, { collection: 'can_land' }
 )
-module.exports = mongoose.model('can_land', canLandSchema)
+module.exports = mongoose.model('can_land', canLand)
